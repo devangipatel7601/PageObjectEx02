@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa090233-885d-4e29-a480-57c9df69acd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BuildYourOwnComputerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CameraAndPhotoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CompareProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ElectronicsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LeicaTMirrorlessDigitalCameraPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductEmailAFriendPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/RegisterResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CheckingOutAsGuestPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CheckoutBillingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FacebookPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NopComNewReleasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShippingMethodPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CompareProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CompareProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LeicaTMirrorlessDigitalCameraPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LeicaTMirrorlessDigitalCameraPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +66,8 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestSuite">
-    <configuration name="TestSuite" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestSuite.verifyGuestUserShouldBeAbleToCheckoutSuccessfully">
+    <configuration name="TestSuite.verifyAlertMessageWhenUserClickOnVoteWithoutSelectingAnyOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -83,24 +77,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSuite.VerifyUserShouldBeAbleToCompare2Products" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageObjectEx02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="VerifyUserShouldBeAbleToCompare2Products" />
+      <option name="METHOD_NAME" value="verifyAlertMessageWhenUserClickOnVoteWithoutSelectingAnyOption" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -108,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToReferAProductToFriendSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyGuestUserShouldBeAbleToCheckoutSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +95,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToReferAProductToFriendSuccessfully" />
+      <option name="METHOD_NAME" value="verifyGuestUserShouldBeAbleToCheckoutSuccessfully" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToRegisterSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyUserShouldBeAbleToSeeAlertMessageWhenSearchWithoutText" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToRegisterSuccessfully" />
+      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSeeAlertMessageWhenSearchWithoutText" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite.verifyUserShouldBeAbleToSeeProductsInShoppingCartSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuite.verifyUserShouldBeAbleToSelectAndPrintCurrencyAccordingly" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectEx02" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +131,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
-      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSeeProductsInShoppingCartSuccessfully" />
+      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSelectAndPrintCurrencyAccordingly" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObjectEx02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestSuite" />
+      <option name="METHOD_NAME" value="verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestSuite" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToRegisterSuccessfully" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToReferAProductToFriendSuccessfully" />
-        <item itemvalue="TestNG.TestSuite.VerifyUserShouldBeAbleToCompare2Products" />
-        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSeeProductsInShoppingCartSuccessfully" />
+        <item itemvalue="TestNG.TestSuite.verifyGuestUserShouldBeAbleToCheckoutSuccessfully" />
+        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSelectAndPrintCurrencyAccordingly" />
+        <item itemvalue="TestNG.TestSuite.verifyAlertMessageWhenUserClickOnVoteWithoutSelectingAnyOption" />
+        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSeeAlertMessageWhenSearchWithoutText" />
+        <item itemvalue="TestNG.TestSuite.verifyUserShouldBeAbleToSwitchToFacebookWindowTab" />
       </list>
     </recent_temporary>
   </component>

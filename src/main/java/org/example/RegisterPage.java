@@ -10,6 +10,9 @@ public class RegisterPage extends Utils{
     private  By _confirmPassword = By.id("ConfirmPassword");
     private By _registerButton = By.id("register-button");
     private By _loginButton = By.xpath("//button[text() ='Log in']");
+    private By _dateOFBirth = By.xpath("//select[contains(@name,'DateOfBirthDay')]");
+    private By _monthOfBirth = By.xpath("//select[contains(@name,'DateOfBirthMonth')]");
+    private By _yearOfBirth = By.xpath("//select[contains(@name,'DateOfBirthYear')]");
     public void enterRegistrationDetails(){
 
         //enter first name
@@ -18,8 +21,18 @@ public class RegisterPage extends Utils{
         //enter last name
         typeText(_lastname, "testLatName");
 
+        //select dob from dropdown
+        selectOptionByText(_dateOFBirth,"13");
+
+        //select month of birth from dropdown
+        selectOptionByIndex(_monthOfBirth,1);
+
+        //select year of month from drop down
+        selectOptionByValue(_yearOfBirth,"1992");
+
+
         //enter email id
-        typeText(_email, "hellofriend@gmail.com");
+        typeText(_email, "tina@gmail.com");
 
         //enter password
         typeText(_password, "Test123");

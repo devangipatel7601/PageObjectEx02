@@ -6,10 +6,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LeicaTMirrorlessDigitalCameraPage extends Utils {
-    private By _productname = By.xpath("//div[@class=\"product-name\"]/h1");
-    private By _AddToCart = By.xpath("//div[@class=\"add-to-cart\"]/div/button");
-    private By _shoppingCart = By.xpath("//span[@class=\"cart-label\"]");
-    private By _productname1 = By.className("product-name");
+     By _productname = By.xpath("//div[@class='product-name']/h1"); // not private as we comparew with cartpage
+    private By _AddToCart = By.xpath("//div[@class='add-to-cart']/div/button");
+     By _shoppingCart = By.xpath("//span[@class='cart-label']");  // not private as we compare with cartpage
+     By _productname1 = By.className("product-name"); // not private as we compare with shoppingcartpage
 
     public void leicaCameraAddToCartAndShoppingCart() {
 

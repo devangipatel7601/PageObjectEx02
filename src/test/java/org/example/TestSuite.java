@@ -15,8 +15,14 @@ public class TestSuite extends BaseTest{
     CameraAndPhotoPage cameraAndPhotoPage = new CameraAndPhotoPage();
     LeicaTMirrorlessDigitalCameraPage leicaTMirrorlessDigitalCameraPage = new
             LeicaTMirrorlessDigitalCameraPage();
-    CartPage cartPage = new CartPage();
+    ShoppingCartPage shoppingcartPage = new ShoppingCartPage();
     CompareProductsPage compareProductsPage = new CompareProductsPage();
+    ProductPage productPage = new ProductPage();
+    FacebookPage facebookPage = new FacebookPage();
+    CheckoutBillingPage checkoutBillingPage = new CheckoutBillingPage();
+    ShippingMethodPage shippingMethodPage = new ShippingMethodPage();
+   CheckingOutAsGuestPage checkingOutAsGuestPage = new CheckingOutAsGuestPage();
+   NopComNewReleasePage nopComNewReleasePage = new NopComNewReleasePage();
     @Test
     public void verifyUserShouldBeAbleToRegisterSuccessfully() {
         //click on register button
@@ -146,12 +152,68 @@ public class TestSuite extends BaseTest{
         leicaTMirrorlessDigitalCameraPage.leicaCameraAddToCartAndShoppingCart();
 
         // to compare product name matched or not in shopping cart
-        cartPage.compareProductNameInCart();
+        shoppingcartPage.compareProductNameInCart();
 
 
 
 
     }
+    @Test
+    public void verifyUserShouldBeAbleToPrintProductTitlesSuccessfully(){
+        homePage.printoutProductTitles();
+    }
+    @Test
+    public void verifyUserShouldBeAbleToSeeAlertMessageWhenSearchWithoutText(){
+        homePage.searchAlertMessage();
+    }
+    @Test
+    public void verifyUserShouldBeAbleToSelectAndPrintCurrencyAccordingly(){
+       homePage.printCurrencyInUsDollar();
+       homePage.printCurrencyInEuro();
+    }
+    @Test
+    public void verifySearchFunctionalityIsWorkingFine(){
+        homePage.searchFunctionality();
+        productPage.printProductName();
+
+    }
+    @Test
+    public void verifyLatestNopCommerceNewReleaseCommentShouldAppearLastInSequence(){
+
+        homePage.clickOnNopComNewRelease();
+        nopComNewReleasePage.fillInNewReleaseDetails();
+
+    }
+    @Test
+    public void verifyGuestUserShouldBeAbleToCheckoutSuccessfully(){
+        homePage.clickOnAddToCartBuildYourOwnComputer();
+        productPage.buildYourOwnComputer();
+        shoppingcartPage.verifyDetailsOfBuildYourOwnComputer();
+        checkingOutAsGuestPage.verifyCheckoutAsAGuest();
+        checkoutBillingPage.fillInCheckoutBillingDetails();
+        shippingMethodPage.clickOnShippingMethod();
+        shippingMethodPage.paymentMethod();
+        shippingMethodPage.confirmOrder();
+
+
+
+    }
+    @Test
+    public void verifyUserShouldBeAbleToSwitchToFacebookWindowTab(){
+        homePage.verifyOpenAndCloseFacebookTabs();
+        facebookPage.facebookActions();
+        homePage.verifyWelcomeMessage();
+
+
+
+    }
+    @Test
+    public void verifyAlertMessageWhenUserClickOnVoteWithoutSelectingAnyOption(){
+        homePage.verifyVoteAlertMessage();
+
+    }
+
+
 
 
 }
