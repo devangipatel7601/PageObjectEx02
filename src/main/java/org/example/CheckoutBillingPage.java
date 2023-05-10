@@ -23,7 +23,7 @@ public class CheckoutBillingPage extends Utils{
         typeText(_email,"abc@gmail.com");
 
         //select country from dropdown
-        selectOptionByValue(_country,"233");
+        selectElementByValue(_country,"233");
 
         //type city name
         typeText(_city,"Harrow");

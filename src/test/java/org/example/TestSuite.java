@@ -173,8 +173,8 @@ public class TestSuite extends BaseTest{
     }
     @Test
     public void verifySearchFunctionalityIsWorkingFine(){
-        homePage.searchFunctionality();
-        productPage.printProductName();
+        homePage.searchFunctionality("Apple","Adidas");
+
 
     }
     @Test

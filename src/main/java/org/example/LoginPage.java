@@ -2,7 +2,8 @@ package org.example;
 
 import org.openqa.selenium.By;
 
-import static org.example.Utils.*;
+
+
 
 public class LoginPage extends Utils{
     private By _email = By.xpath("//input[contains(@class,'email')]");
@@ -20,4 +21,6 @@ public class LoginPage extends Utils{
         clickOnElement(_loginButton);
     }
 
-}
+    }
+
+

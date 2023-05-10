@@ -1,5 +1,6 @@
 package org.example;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -8,9 +9,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.Date;
 
 public class Utils extends BasePage {
     //all reusable methods
@@ -32,6 +33,7 @@ public class Utils extends BasePage {
         Timestamp timestamp1 = new Timestamp(System.currentTimeMillis());
         return timestamp1.getTime();
     }
+    String timeStamp2 = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 
     //reusable method with return type and parameters for getting text from element
     public static String getTextFromElement(By by) {
@@ -39,17 +41,17 @@ public class Utils extends BasePage {
 
     }
 
-    public static void selectOptionByText(By by, String text) {
+    public static void selectElementByText(By by, String text) {
         Select select = new Select(driver.findElement(by));
         select.selectByVisibleText(text);
     }
 
-    public static void selectOptionByIndex(By by, Integer index) {
+    public static void selectElementByIndex(By by, Integer index) {
         Select select = new Select(driver.findElement(by));
         select.selectByIndex(index);
     }
 
-    public static void selectOptionByValue(By by, String value) {
+    public static void selectElementByValue(By by, String value) {
         Select select = new Select(driver.findElement(by));
         select.selectByValue(value);
     }
@@ -91,11 +93,16 @@ public class Utils extends BasePage {
         je.executeScript("arguments[0].scrollIntoView(true);", element);
         System.out.println(element.getText());
     }
-
+    public static void acceptAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+    public static void dismissAlert() {
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
 
 }
-
-
 
 
 

@@ -158,7 +158,7 @@ public class HomePage extends Utils {
            String actualCurrency= getTextFromElement(_usDollar);
            System.out.println("Selected Currency: "+actualCurrency);
             //select euro in currency selector
-            selectOptionByText(_currencySelector,"US Dollar");
+            selectElementByText(_currencySelector,"US Dollar");
             //create list for elements
             List<WebElement>actualCurrency1 = driver.findElements(By.cssSelector("span.price"));
             for (WebElement e:actualCurrency1) {
@@ -172,7 +172,7 @@ public class HomePage extends Utils {
              String actualCurrency = getTextFromElement(_euro);
              System.out.println("Selected Currency: "+actualCurrency);
              //select euro in currency selector
-             selectOptionByText(_currencySelector,"Euro");
+             selectElementByText(_currencySelector,"Euro");
              //create list for elements
              List<WebElement>actualCurrency1 = driver.findElements(By.cssSelector("span.price"));
              for (WebElement e:actualCurrency1) {
@@ -202,9 +202,20 @@ public class HomePage extends Utils {
 
     }
 
-    public void searchFunctionality() {
-        typeText(_searchPlaceholderText, "adidas");
+    public void searchFunctionality(String searchText,String expectedResult) {
+        typeText(_searchPlaceholderText,searchText);
         clickOnElement(_searchButton);
+
+        //iterate through all searched product
+        List<WebElement>products_collection=driver.findElements(By.cssSelector("div.product-grid h2"));
+
+        //verify if search result is displayed according to searched product
+        for(WebElement e:products_collection){
+            System.out.println(e.getText());
+        }
+        String actualMessage = searchText;
+        Assert.assertEquals(actualMessage,expectedResult);
+
 
     }
 

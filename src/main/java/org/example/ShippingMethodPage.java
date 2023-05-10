@@ -39,7 +39,7 @@ public class ShippingMethodPage extends Utils{
     public void paymentMethod(){
 
         //select visa card type
-        selectOptionByText(_visa,"Visa");
+        selectElementByText(_visa,"Visa");
 
         //type cardholder name
         typeText(_cardHolderName,"JackSmith");
@@ -48,10 +48,10 @@ public class ShippingMethodPage extends Utils{
         typeText(_cardNumber,"4024007195287916");
 
         //select expiry month
-        selectOptionByValue(_expireMonth,"2");
+        selectElementByValue(_expireMonth,"2");
 
         //select expiry year
-        selectOptionByValue(_expireYear,"2026");
+        selectElementByValue(_expireYear,"2026");
 
         //type card code
         typeText(_cardCode,"614");

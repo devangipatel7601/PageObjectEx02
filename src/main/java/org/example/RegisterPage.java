@@ -1,6 +1,7 @@
 package org.example;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class RegisterPage extends Utils{
     private By _firstname = By.id("FirstName");
@@ -22,17 +23,17 @@ public class RegisterPage extends Utils{
         typeText(_lastname, "testLatName");
 
         //select dob from dropdown
-        selectOptionByText(_dateOFBirth,"13");
+        selectElementByText(_dateOFBirth,"13");
 
         //select month of birth from dropdown
-        selectOptionByIndex(_monthOfBirth,1);
+        selectElementByIndex(_monthOfBirth,1);
 
         //select year of month from drop down
-        selectOptionByValue(_yearOfBirth,"1992");
+        selectElementByValue(_yearOfBirth,"1992");
 
 
         //enter email id
-        typeText(_email, "tina@gmail.com");
+        typeText(_email, "tina" + timeStamp() + "@gmail.com");
 
         //enter password
         typeText(_password, "Test123");
@@ -42,6 +43,7 @@ public class RegisterPage extends Utils{
 
         //click on register button
         clickOnElement(_registerButton);
+
     }
 
 }
